@@ -6,7 +6,7 @@
     "type": "git"
   },
   "bin": {
-    "asdesktop-cli": "./bin/junit-metrics"
+    "junit-metrics": "./bin/junit-metrics"
   },
   "scripts": {
     "clean": "shx rm -fr ./dist",
