@@ -1,0 +1,28 @@
+{
+  "name": "junit-metrics",
+  "version": "1.0.0",
+  "repository": {
+    "url": "ssh://git@github.com/mkramb/junit-metrics.git",
+    "type": "git"
+  },
+  "bin": {
+    "asdesktop-cli": "./bin/junit-metrics"
+  },
+  "scripts": {
+    "clean": "shx rm -fr ./dist",
+    "dev": "yarn build -w",
+    "build": "tsc -p ./tsconfig.json --outDir ./dist",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/yargs": "^17.0.10",
+    "prettier": "^2.7.1",
+    "shx": "^0.3.4",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@3.2.1"
+}
